@@ -5,7 +5,11 @@ public class Main {
 
        Tree myFavPineTree = new Tree(145, 10, TreeType.PINE);
 
-       System.out.println(myFavBirchTree.treeType);
+       // since added access modifiers, not valid
+       // System.out.println(myFavBirchTree.treeType);
+
+        System.out.println(myFavBirchTree.getTreeType());
+        System.out.println(myFavBirchTree.getHeightFt());
 
        myFavBirchTree.announceTallTree();
        myFavPineTree.announceTallTree();
